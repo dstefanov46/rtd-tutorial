@@ -5,9 +5,8 @@ build:
   tools:
     python: "3.8"
 
-
 python:
-  version: "3.7"
+  version: "3.9"
   # Install our python package before building the docs
   install:
     - method: pip
