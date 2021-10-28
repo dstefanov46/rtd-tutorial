@@ -7,8 +7,8 @@ build:
 
 python:
   # Install our python package before building the docs
-  install:
   version: "3.9"
+  install:
     - method: pip
       path: .
 
