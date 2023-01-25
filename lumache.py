@@ -11,13 +11,31 @@ class InvalidKindError(Exception):
 
 
 def get_random_ingredients(kind=None):
-    """
-    Return a list of random ingredients as strings.
+    """Trains MLR models. One model for each pv_id.
 
-    :param kind: Optional "kind" of ingredients.
-    :type kind: list[str] or None
-    :raise lumache.InvalidKindError: If the kind is invalid.
-    :return: The ingredients list.
-    :rtype: list[str]
+    Parameters
+    ----------
+    t_latest : pandas.Timestamp
+        First timestamp that is used for training.
+    t0 : pandas.Timestamp, optional
+        Last timestamp that is used for training.
+    pv_ids : list
+        List of pv_ids for which MLR model has to be trained.
+    sim_name : str
+        String representing simulation name.
+    dump : bool, optional
+        Denotes whether to dump results to DB (DB has to be emptied before).
+        In case of True, empty tables:
+        [RtData15min_SE_clean], [ss_agg_clean], [slo_agg_clean]
+
+    Returns
+    -------
+    pv_df_clean : pandas.DataFrame, if dump=False
+        Dataframe of series.
+        Index: ["pv_id", "timestamp_utc"]
+        Columns: ["Pg_kW", "filled"]
     """
-    return ["shells", "gorgonzola", "parsley"]
+
+    a = '5'
+
+    return 'bruhu'
