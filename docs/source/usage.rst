@@ -6,29 +6,17 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To use PV Forecaster, first create your **conda** environment:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   $ conda env create -f environment.yml
 
-Creating recipes
+Code
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+An example function ``pv_forecaster_example.imput_train()`` function:
 
-.. autofunction:: lumache.get_random_ingredients
+.. autofunction:: pv_forecaster_example.imput_train
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
 

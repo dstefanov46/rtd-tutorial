@@ -1,13 +1,12 @@
-Welcome to Lumache's documentation!
+PV Forecaster Documentation
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+PV Forecaster is a Python app for prediction of PV generation across Slovenia. It was developed for the Slovenian
+Transmission Network Operator ELES.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`usage` section for further information, which includes information on
+how to :ref:`installation` the **conda** environment, as well as description of the `code` which represents the
+*PV Forecaster* app.
 
 .. note::
 
@@ -19,4 +18,3 @@ Contents
 .. toctree::
 
    usage
-   api

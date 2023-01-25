@@ -1,16 +1,10 @@
 """
-Lumache - Python library for cooks and food lovers.
+PV Forecaster - Python app for prediction of PV generation across Slovenia.
 """
 
 __version__ = "0.1.0"
 
-
-class InvalidKindError(Exception):
-    """Raised if the kind is invalid."""
-    pass
-
-
-def get_random_ingredients(kind=None):
+def imput_train(t_latest, t0, pv_ids, sim_name, dump=False):
     """Trains MLR models. One model for each pv_id.
 
     Parameters
